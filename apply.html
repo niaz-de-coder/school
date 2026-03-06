@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Apply Now | EduStream Academy</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body { font-family: 'Lexend', sans-serif; }
+        .form-input-focus {
+            @apply focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all duration-200;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+
+    <nav class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+        <div class="flex items-center justify-between p-4 max-w-7xl mx-auto">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="bg-primary p-1.5 rounded-lg text-white">
+                    <span class="material-symbols-outlined">school</span>
+                </div>
+                <h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold tracking-tight">EduStream</h2>
+            </a>
+            <a href="index.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary">Back to Home</a>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            
+            <div class="lg:col-span-1">
+                <div class="sticky top-24 space-y-8">
+                    <div>
+                        <h1 class="text-4xl font-black text-slate-900 dark:text-slate-100 mb-4">Admissions <span class="text-primary">2026</span></h1>
+                        <p class="text-slate-600 dark:text-slate-400">Complete the form below to begin your journey with us. Our admissions team will review your profile within 3-5 business days.</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="flex-none w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm">1</div>
+                            <div>
+                                <h4 class="font-bold">Personal Details</h4>
+                                <p class="text-xs text-slate-500">Identity and contact info</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 opacity-50">
+                            <div class="flex-none w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center font-bold text-sm text-slate-500">2</div>
+                            <div>
+                                <h4 class="font-bold">Academic History</h4>
+                                <p class="text-xs text-slate-500">Previous school records</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 opacity-50">
+                            <div class="flex-none w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center font-bold text-sm text-slate-500">3</div>
+                            <div>
+                                <h4 class="font-bold">Final Submission</h4>
+                                <p class="text-xs text-slate-500">Review and apply</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-primary/5 border border-primary/10 rounded-2xl">
+                        <h5 class="font-bold text-primary mb-2 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-sm">info</span> Need Help?
+                        </h5>
+                        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                            Contact our support desk at <strong>admissions@edustream.edu</strong> for assistance with your application.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-2">
+                <form action="#" class="bg-white dark:bg-slate-900 shadow-xl shadow-primary/5 rounded-3xl p-8 border border-primary/5 space-y-10">
+                    
+                    <section class="space-y-6">
+                        <div class="flex items-center gap-3 border-b border-slate-100 dark:border-slate-800 pb-4">
+                            <span class="material-symbols-outlined text-primary">person_outline</span>
+                            <h3 class="text-xl font-bold">Personal Information</h3>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-sm font-semibold opacity-70">First Name</label>
+                                <input type="text" placeholder="John" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark focus:ring-2 focus:ring-primary focus:border-transparent outline-none">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-sm font-semibold opacity-70">Last Name</label>
+                                <input type="text" placeholder="Doe" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark focus:ring-2 focus:ring-primary focus:border-transparent outline-none">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-sm font-semibold opacity-70">Email Address</label>
+                                <input type="email" placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark focus:ring-2 focus:ring-primary focus:border-transparent outline-none">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-sm font-semibold opacity-70">Phone Number</label>
+                                <input type="tel" placeholder="+1 (555) 000-0000" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark focus:ring-2 focus:ring-primary focus:border-transparent outline-none">
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="space-y-6">
+                        <div class="flex items-center gap-3 border-b border-slate-100 dark:border-slate-800 pb-4">
+                            <span class="material-symbols-outlined text-primary">book</span>
+                            <h3 class="text-xl font-bold">Program Selection</h3>
+                        </div>
+                        
+                        <div class="space-y-2">
+                            <label class="text-sm font-semibold opacity-70">Desired Course</label>
+                            <select class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark focus:ring-2 focus:ring-primary focus:border-transparent outline-none appearance-none">
+                                <option>Digital Literacy (Technology)</option>
+                                <option>Biotechnology 101 (Science)</option>
+                                <option>Modern Writing (Literature)</option>
+                                <option>Visual Arts (Design)</option>
+                            </select>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-sm font-semibold opacity-70">Why do you want to join EduStream?</label>
+                            <textarea rows="4" placeholder="Tell us about your goals..." class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark focus:ring-2 focus:ring-primary focus:border-transparent outline-none"></textarea>
+                        </div>
+                    </section>
+
+                    <section class="space-y-6">
+                        <div class="flex items-center gap-3 border-b border-slate-100 dark:border-slate-800 pb-4">
+                            <span class="material-symbols-outlined text-primary">upload_file</span>
+                            <h3 class="text-xl font-bold">Documents</h3>
+                        </div>
+                        
+                        <div class="border-2 border-dashed border-primary/20 rounded-2xl p-8 text-center hover:bg-primary/5 transition-colors cursor-pointer group">
+                            <span class="material-symbols-outlined text-4xl text-primary/40 group-hover:text-primary mb-2">cloud_upload</span>
+                            <p class="text-sm font-medium">Click to upload or drag and drop</p>
+                            <p class="text-xs text-slate-500 mt-1">Upload ID Proof or Previous Transcripts (PDF, JPG up to 5MB)</p>
+                            <input type="file" class="hidden">
+                        </div>
+                    </section>
+
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" id="terms" class="rounded border-slate-300 text-primary focus:ring-primary">
+                        <label for="terms" class="text-xs text-slate-500">I agree to the terms and conditions and privacy policy of EduStream Academy.</label>
+                    </div>
+
+                    <button type="submit" class="w-full bg-primary hover:bg-blue-600 text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/25 transition-all transform hover:-translate-y-1">
+                        Submit Application
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-8 text-center text-slate-500 text-sm border-t border-primary/5">
+        <p>© 2026 EduStream Academy. Secured Admission Portal.</p>
+    </footer>
+
+</body>
+</html>
